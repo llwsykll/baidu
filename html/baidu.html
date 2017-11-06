@@ -3,7 +3,8 @@
 	<head>
 		<meta  http-equiv="Content-Type" content="text/html; charset=UTF-8" />
 		<title>百度一下，你就知道</title>
-		<link rel="icon" sizes="any" mask="" href="//www.baidu.com/img/baidu_85beaf5496f291521eb75ba38eacbd87.svg">
+		<link rel="shortcut icon" href="https://www.baidu.com/favicon.ico" type="image/x-icon">
+		<link rel="icon" sizes="any" mask="" href="https://www.baidu.com/img/baidu_85beaf5496f291521eb75ba38eacbd87.svg">
 		<link href="/css/style.css" rel="stylesheet" type="text/css" />
 	</head>
 	<body>
@@ -11,7 +12,7 @@
 			<ul class = "nav">
 				<div class="list">
 					<li><a class="top" href="http://news.baidu.com/">新闻</a></li>
-					<li><a class="top" href="http://www.hao123.com/">hao123</a></li>
+					<li><a class="top_en" href="http://www.hao123.com/">hao123</a></li>
 					<li><a class="top" href="http://map.baidu.com/">地图</a></li>
 					<li><a class="top" href="http://v.baidu.com/?fr=bd">视频</a></li>
 					<li><a class="top" href="http://tieba.baidu.com/">贴吧</a></li>
@@ -108,10 +109,19 @@
 				</div>
 				<div id="search">
 					<form method="post">
-						<span class="border_box" onfocus="blue()">
-							<input id="input_box" type="text" />
+						<span id="box1" class="border_box">
+							<input id="input_box" type="text" onfocus="blue()" onblur="gray()" />
 							<script type="text/javascript">
 								document.getElementById("input_box").focus();
+								function blue(){
+									var e=document.getElementById("box1");
+									e.className="b_box_focus";
+								}
+								function gray()
+								{
+									var e=document.getElementById("box1");
+									e.className="border_box";
+								}
 							</script>
 							<span class="camera"></span>
 						</span>

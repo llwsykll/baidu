@@ -19,6 +19,7 @@ body{position: relative; min-height: 600px;min-width: 810px;}
 	list-style: none;
 	position: absolute;
 	right: 80px;
+	top:3px;
 	margin: 16px;
 	height: 100%;
 }
@@ -40,11 +41,25 @@ body{position: relative; min-height: 600px;min-width: 810px;}
 	display: inline-block;
 	float:left;
 	color:#333;
-	font-weight:700;
 	line-height:24px;
-	margin: 0;
+	margin-top:3px ;
 	margin-left:20px;
-	font-size:13px;
+	font:13px arial;
+	font-weight:700;
+	padding:0;
+	list-style:none;
+	text-decoration: underline;
+	pointer-events:auto;
+}
+#head a.top_en{
+	display: inline-block;
+	float:left;
+	color:#333;
+	line-height:24px;
+	margin-top:4px ;
+	margin-left:20px;
+	font:13px arial;
+	font-weight:700;
 	padding:0;
 	list-style:none;
 	text-decoration: underline;
@@ -73,7 +88,7 @@ body{position: relative; min-height: 600px;min-width: 810px;}
 	width:40px;
 	font-size: 13px;
 	line-height: 24px;
-	margin-left: 20px;
+	margin-left: 24px;
 	margin-right: 0px;
 	padding-right: 0px; 
 	text-decoration: underline;
@@ -151,7 +166,7 @@ body{position: relative; min-height: 600px;min-width: 810px;}
 }
 #head a.more{
 	position: absolute;
-	right:-90px;
+	right:-91px;
 	width:60px;
 	background-color:#38f;
 	height:23px;
@@ -300,7 +315,7 @@ body{position: relative; min-height: 600px;min-width: 810px;}
 	z-index: 50;
 }
 #body #search{
-	margin: 22px auto 0;
+	margin: 21px auto 0;
 	width: 641px;
 	text-align: left;
 	z-index: 100;
@@ -321,15 +336,29 @@ body{position: relative; min-height: 600px;min-width: 810px;}
 	outline: none;
 	pointer-events:auto;
 	tabindex:0;
+	border-color: #b8b8b8 transparent #ccc #b8b8b8;
 }
 #body #search .border_box:hover {
-    border-color:#999;
+    border-color:#999 transparent #b3b3b3 #999;
 }
-.input_box:focus {
-	outline:1px solid #4791ff;
-	background-color: #38f;
+#body #search .b_box_focus{
+	z-index: 100;
+	position: relative;
+	float: left;
+	display: inline-block;
+	padding: 0;
+	margin: 0;
+	width:539px;
+	height: 34px;
+	border: 1px solid #b6b6b6;
+	vertical-align: top;
+	border-right-width: 0;
+	overflow: hidden;
+	outline: none;
+	pointer-events:auto;
+	border-color: #4791ff transparent #4791ff #4791ff;
 }
-#body #search .border_box #input_box{
+#body #search #input_box{
 	z-index: 100;
 	position: relative;
 	width:500px;
@@ -341,7 +370,7 @@ body{position: relative; min-height: 600px;min-width: 810px;}
 	border: 0;
 	outline: 0;
 }
-#body #search .border_box .camera {
+#body #search .camera {
 	z-index: 100;
 	display: inline-block;
 	position: relative;
@@ -354,7 +383,7 @@ body{position: relative; min-height: 600px;min-width: 810px;}
 	background: #fff url(https://ss1.bdstatic.com/5eN1bjq8AAUYm2zgoY3K/r/www/cache/static/protocol/https/soutu/img/camera_new_5606e8f.png) no-repeat;
 
 }
-#body #search .border_box .camera:hover {
+#body #search .camera:hover {
     background-position: 0 -20px;
 }
 #body #search .btn .button{
@@ -377,7 +406,6 @@ body{position: relative; min-height: 600px;min-width: 810px;}
 }
 #body #search .btn .button:hover{
 	background-color:#317ef3;
-	border:1px solid #2868c8;
 	box-shadow: 1px 1px 1px #ccc;
 }
 #code{
@@ -417,7 +445,7 @@ body{position: relative; min-height: 600px;min-width: 810px;}
 	text-align: center;
 }
 .mobile{
-	margin: 7px 0 0 0;
+	margin: 6px 0 0 0;
 	padding: 0;
 	border:0;
 	text-align: left;
@@ -427,7 +455,7 @@ body{position: relative; min-height: 600px;min-width: 810px;}
 	z-index: 3;
 	position: absolute;
 	text-align: center;
-	bottom: 55px;
+	bottom: 53px;
 	width:100%;
 }
 #foot a.foot_type_first{
@@ -436,15 +464,17 @@ body{position: relative; min-height: 600px;min-width: 810px;}
 	font:12px arial;
 	text-align: left;
 	line-height: 22px;
-	margin-left: 0;
+	margin-right: 0;
 }
 #foot a.foot_type{
 	pointer-events:auto;
 	color:#999;
+	font-weight: 400;
 	font:12px arial;
 	text-align: left;
 	line-height: 22px;
-	margin-left: 22px;
+	margin-left: 21px;
+	word-spacing: 3px;
 }
 #foot #foot2{
 	margin: 0;
@@ -457,17 +487,19 @@ body{position: relative; min-height: 600px;min-width: 810px;}
 }
 #foot #foot2 .icon_1{
 	width: 14px;
-	vertical-align: center;
 	height: 17px;
 	display: inline-block;
+	position: relative;
+	bottom: -3px;
 	overflow: hidden;
 	background: url(https://ss1.bdstatic.com/5eN1bjq8AAUYm2zgoY3K/r/www/cache/static/protocol/https/global/img/icons_5859e57.png) -600px -96px no-repeat;
 }
 #foot #foot2 .icon_2{
 	width: 14px;
 	height: 17px;
-	top:3px;
 	display: inline-block;
+	position: relative;
+	bottom: -3px;
 	overflow: hidden;
 	background: url(https://ss1.bdstatic.com/5eN1bjq8AAUYm2zgoY3K/r/www/cache/static/protocol/https/global/img/icons_5859e57.png) -623px -96px no-repeat;
 }
